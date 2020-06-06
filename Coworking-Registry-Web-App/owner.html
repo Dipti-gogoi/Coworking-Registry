@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="home-bg2">
+    <head>
+        <title>Owner Page</title>
+        <meta charset="UTF-8"> 
+        <script type = "text/javascript" src = "dipti_gogoi.js"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+        <div class="navbar">
+        <a href="index.html" onclick="logout()">Logout</a> 
+        <a href="addproperty.html">Add property</a>
+        </div>
+        <body onload = "listProperties()">
+        <h1>Owner</h1>
+        <table id = "myproperties" border="1">
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <button type="button" onclick="listWorkSpaces()">List Workspaces</button>
+                </td>
+                <td>
+                    <button type="button" onclick="delistProperty()">Delist Property</button>
+                </td>
+                <td>
+                    <button type="button"  onclick = "addWorkSpaceHelper()">Add Workspace</button>
+                </td>
+                <td>
+                    <button type="button" onclick = "modifyPropertyHelper()">Modify</button>
+                </td>
+            </tr>
+        </table>
+        <table id = "workspaces" border = "1">
+        </table>
+        <div id = "delistWorkspace">
+        </div>
+        <div class="footer">
+          <p>© Copyright 6th July, 2019 Dipti Gogoi, Bow Valley College</p>
+    </div>
+    </body>
+    </body>
+</html>

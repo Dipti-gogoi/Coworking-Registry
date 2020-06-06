@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="home-bg0">
+
+<head>
+  <title>index</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="dipti_gogoi.js"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="loadLoginPage()">
+  <div class="navbar">
+    <a href="signup.html">Sign Up</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+  <form onsubmit="login()" id="loginForm">
+    <img src="icon.png" class="icon">
+    <table>
+      <th>Please login using your credentials</th>
+      <tr>
+        <td>
+          <label>Email: </label>
+        </td>
+        <td>
+          <input type="email" id="user" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Password: </label>
+        </td>
+        <td>
+          <input type="password" id="password" required>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <input type="submit" value="Login">
+
+  </form>
+
+  <div class="footer">
+    <p>© Copyright 6th July, 2019 Dipti Gogoi, Bow Valley College</p>
+  </div>
+</body>
+
+</html>

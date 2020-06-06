@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="home-bg4">
+    <head>
+        <title>Add Workspace</title>
+        <meta charset="UTF-8">
+        <script type = "text/javascript" src = "dipti_gogoi.js"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+       <div class="navbar">
+        <a href="owner.html">Owner Page</a>
+        </div>
+        <form onsubmit="addWorkspace()">
+          <table>
+            <th>All fields are required</th>
+            <tr>
+              <td>
+                <label>WorkSpace Type: </label>
+              </td>
+              <td>
+                <select id="workspacetype">
+                    <option value="1">Meeting Room</option>
+                    <option value="2">Private Office</option>
+                    <option value="3">Desk</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Number of Individuals: </label>
+              </td>
+              <td>
+                <input type="text" id="numberofindividuals" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Smoking Allowed: </label>
+              </td>
+              <td>
+                <input type="checkbox" id="smoking">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Available Date: </label>
+              </td>
+              <td>
+                <input type="date" id="available" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Lease Term: </label>
+              </td>
+              <td>
+                <select id="leaseterm">
+                    <option value="1">Day</option>
+                    <option value="2">Week</option>
+                    <option value="3">Month</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Price: </label>
+              </td>
+              <td>
+                <input type="text" id="price" required>
+              </td>
+            </tr>
+          </table>
+          <br>
+          <input type="submit" value="Add Workspace">
+        </form>
+        <div class="footer">
+          <p>© Copyright 6th July, 2019 Dipti Gogoi, Bow Valley College</p>
+    </div>
+    </body>
+    </body>
+</html>

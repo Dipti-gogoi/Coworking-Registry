@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="home-bg3">
+    <head>
+        <title>coworker</title>
+        <meta charset="UTF-8"> 
+        <script type = "text/javascript" src = "dipti_gogoi.js"></script> 
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="navbar">
+        <a href="index.html" onclick="logout()">Logout</a>
+        </div>
+        <h1>Coworker</h1>
+        <form onsubmit="searchWorkSpaces()">
+          <table>
+            <th>
+                Leave empty to list all workspaces
+            </th>
+            <tr>
+              <td>
+                <label>Address: </label>
+              </td>
+              <td>
+                <input type="text" id="address">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Neighborhood: </label>
+              </td>
+              <td>
+                <input type="text" id="neighborhood">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Square Feet: </label>
+              </td>
+              <td>
+                <input type="text" id="sqft">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Parking Garage: </label>
+              </td>
+              <td>
+                <input type="checkbox" id="parking">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Public Transit: </label>
+              </td>
+              <td>
+                <input type="checkbox" id="transit">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>WorkSpace Type: </label>
+              </td>
+              <td>
+                <select id="workspacetype">
+                    <option value = "0"> Not specified</option>
+                    <option value="1">Meeting Room</option>
+                    <option value="2">Private Office</option>
+                    <option value="3">Desk</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Number of Individuals: </label>
+              </td>
+              <td>
+                <input type="text" id="numberofindividuals">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Smoking Allowed: </label>
+              </td>
+              <td>
+                <input type="checkbox" id="smoking">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Available Date: </label>
+              </td>
+              <td>
+                <input type="date" id="available">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Lease Term: </label>
+              </td>
+              <td>
+                <select id="leaseterm">
+                    <option value="0">Not specified</option>
+                    <option value="1">Day</option>
+                    <option value="2">Week</option>
+                    <option value="3">Month</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Price: </label>
+              </td>
+              <td>
+                <input type="text" id="price">
+              </td>
+            </tr>
+          </table>
+          <br>
+          <input type="submit" value="Search for Workspaces">
+        </form>
+        <table id="searchResults" border="1">
+        </table>
+        <div id="viewDetails">
+        </div>
+        <table id="details">
+        </div>
+        <div class="footer">
+          <p>© Copyright 6th July, 2019 Dipti Gogoi, Bow Valley College</p>
+    </div>
+    </body>
+    </body>
+</html>
